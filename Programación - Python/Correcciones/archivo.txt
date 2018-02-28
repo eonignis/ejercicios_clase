@@ -1,0 +1,3 @@
+Nombre: hola
+Edad: 234
+Apellido: caracola
