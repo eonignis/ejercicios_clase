@@ -1,0 +1,27 @@
+<!DOCTYPE liga_futbol [
+	<!ELEMENT partidos (partido+)>
+	<!ELEMENT partido (equipo_local, equipo_visitante)>
+	<!ELEMENT equipo_local (gol_local)>
+	<!ELEMENT gol_local (#PCDATA)>
+	<!ELEMENT equipo_visitante (gol_visitante)>
+	<!ELEMENT gol_visitante (#PCDATA)>
+]>
+
+
+<!DOCTYPE liga_futbol [
+	<!ELEMENT partidos (partido+)>
+	<!ELEMENT partido (equipo_local, equipo_visitante)>
+	<!ELEMENT equipo_local (#PCDATA)>
+		<!ATTLIST goles CDATA #REQUIRED>
+	<!ELEMENT equipo_visitante (#PCDATA)>
+		<!ATTLIST goles CDATA #REQUIRED>
+]>
+
+<!DOCTYPE liga_futbol [
+	<!ELEMENT partidos (partido+)>
+	<!ELEMENT partido EMPTY>
+		<!ATTLIST equipo_local CDATA #REQUIRED>
+		<!ATTLIST goles_local CDATA #REQUIRED>
+		<!ATTLIST equipo_visitante CDATA #REQUIRED>
+		<!ATTLIST goles_visitante CDATA #REQUIRED>
+]>

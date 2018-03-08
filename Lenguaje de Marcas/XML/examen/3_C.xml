@@ -1,0 +1,14 @@
+<!DOCTYPE liga_futbol [
+	<!ELEMENT partidos (partido+)>
+	<!ELEMENT partido EMPTY>
+		<!ATTLIST equipo_local CDATA #REQUIRED>
+		<!ATTLIST goles_local CDATA #REQUIRED>
+		<!ATTLIST equipo_visitante CDATA #REQUIRED>
+		<!ATTLIST goles_visitante CDATA #REQUIRED>
+]>
+
+<partidos>
+	</partido equipo_local="Manchester" goles_local="0" equipo_visitante="Ajax" goles_visitante="5">
+	</partido equipo_local="Sevilla" goles_local="3" equipo_visitante="Betis" goles_visitante="3">
+	</partido equipo_local="Roma" goles_local="4" equipo_visitante="Basilea" goles_visitante="5">
+</partidos>

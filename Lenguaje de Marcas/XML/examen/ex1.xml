@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Carta_Esmorzar>
+	<Menjar_1>
+		<nom complement="">Gofres Belgues</nom>
+		<preu currency="euro">5,95</preu>
+		<descripcio>Dos dels nostres famosos Gofres Belgues amb abundant xarop</descripcio>
+		<calories>650</calories>
+	</Menjar_1>
+	<Menjar_2>
+		<nom complement="Maduixes">Gofres Belgues</nom>
+		<preu currency="euro">7,95</preu>
+		<descripcio>Lleugers Gofres Belgues de maduixa i nata muntada</descripcio>
+		<calories>900</calories>
+	</Menjar_2>
+	<Menjar_3>
+		<nom complement="Fruites del Bosc">Gofres Belgues</nom>
+		<preu currency="euro">8,95</preu>
+		<descripcio>Lleugers Gofres Belgues coberts de fruites del bosc i nata muntada</descripcio>
+		<calories>900</calories>
+	</Menjar_3>
+</Carta_Esmorzar>

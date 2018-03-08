@@ -1,0 +1,26 @@
+<!DOCTYPE liga_futbol [
+	<!ELEMENT partidos (partido+)>
+	<!ELEMENT partido (equipo_local, equipo_visitante)>
+	<!ELEMENT equipo_local (#PCDATA)>
+		<!ATTLIST goles CDATA #REQUIRED>
+	<!ELEMENT equipo_visitante (#PCDATA)>
+		<!ATTLIST goles CDATA #REQUIRED>
+]>
+
+<partidos>
+	<partido>
+		<equipo_local gol="0">Manchester</equipo_local>
+		-
+		<equipo_visitante gol="5">Ajax</equipo_visitante>
+	</partido>
+	<partido>
+		<equipo_local gol="3">Sevilla</equipo_local>
+		-
+		<equipo_visitante gol="3">Betis</equipo_visitante>
+	</partido>
+	<partido>
+		<equipo_local gol="4">Roma</equipo_local>
+		-
+		<equipo_visitante gol="5">Basilea</equipo_visitante>
+	</partido>
+</partidos>
