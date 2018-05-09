@@ -1,0 +1,45 @@
+def harvest():
+    while on_stone():
+        pick_stone()
+def go_up():
+    turn_left()
+    move()
+    turn_left()
+    turn_left()
+    turn_left()
+    move
+def go_down():
+    turn_left()
+    turn_left()
+    move()
+    turn_left()
+    move()
+def downstairs():
+    turn_left()
+    turn_left()
+    turn_left()
+    move()
+    turn_left()
+    move()
+def to_left():
+    turn_left()
+    turn_left()
+    turn_left()
+def upstairs():
+    move()
+    harvest()
+    go_up()
+i=1
+while i<=5:
+    upstairs()
+    i=i+1
+move()
+harvest()
+i=1
+go_down()
+while i<=4:
+    downstairs()
+    i=i+1
+to_left()
+move()
+turn_off()

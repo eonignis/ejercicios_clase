@@ -1,0 +1,17 @@
+def harvest():
+    if on_stone():
+        pick_stone()
+        turn_off()
+def to_right():
+    turn_left()
+    turn_left()
+    turn_left()
+while not front_is_clear():
+    turn_left()
+    while front_is_clear():
+        move()
+        harvest()
+        if right_is_clear():
+            to_right()
+        elif left_is_clear and not front_is_clear():
+            turn_left()

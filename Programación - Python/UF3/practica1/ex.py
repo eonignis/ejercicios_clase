@@ -1,0 +1,1 @@
+f=open("document_seccionat.txt")

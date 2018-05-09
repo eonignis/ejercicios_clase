@@ -1,0 +1,88 @@
+stone=0
+#Cada vez que coja una piedra el robot dirá "toma esa!"
+def harvest():
+    global stone
+    while on_stone():
+        pick_stone()
+        stone=stone+1
+        print("Toma esa!")
+def to_right():
+    turn_left()
+    turn_left()
+    turn_left()
+def turn_arround():
+    turn_left()
+    turn_left()
+def cruz():
+    i=1
+    while i<=4:
+        to_right()
+        move()
+        move()
+        turn_arround()
+        move()
+        move()
+        i=i+1
+def estrella():
+    i=1
+    move()
+    while i<=4:
+        move()
+        to_right()
+        to_right()
+        move()
+        turn_left()
+        move()
+        to_right()
+        move()
+        turn_left()
+        i=i+1
+    turn_arround()
+    move()
+    turn_arround()
+
+print("Primero, voy a recoger mis cosas para salir a escenario.")
+move()
+while not front_is_clear():
+    turn_left()
+    while front_is_clear():
+        move()
+        harvest()
+        if stone==11:
+            break;
+        if right_is_clear():
+            to_right()
+        elif left_is_clear and not front_is_clear():
+            turn_left()
+print ("Bien, ya tengo todas mis cosas! Estoy listo para debutar!")
+to_right()
+move()
+to_right()
+i=1
+while i<=4:
+    move()
+    i=i+1
+to_right()
+i=1
+while i<=3:
+    move()
+    i=i+1
+harvest()
+turn_left()
+print ("Señoras y señores, voy a bailar para ustedes!")
+cruz()
+estrella()
+cruz()
+print("Ha sido todo un placer!")
+to_right()
+i=1
+while i<=4:
+    move()
+    i=i+1
+to_right()
+i=1
+while i<=3:
+    move()
+    i=i+1
+print ("Qué cansacion. Y mañana más! Ahora, a descansar.")
+harvest()
