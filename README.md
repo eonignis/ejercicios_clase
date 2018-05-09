@@ -5,6 +5,8 @@ Ahora mismo hay:
 
 HTML/CSS
 
+XML
+
 JAVA
 
 PYTHON
